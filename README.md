@@ -1,4 +1,4 @@
-### AdditionsMC Fabric
+# AdditionsMC Fabric
 
 This is AdditionsMC from https://github.com/Poco-Studios/AdditionsMC, 
 but ported to Fabric for better support and compatibility!
@@ -9,7 +9,7 @@ The items in AdditionsMC Fabric are going to be very different from those in Add
 
 It's server-side compatible this time!
 
-# How to Use (Requires medium computer skills, e.g. opening hidden folders, browsing to system directories)
+## How to Use (Requires medium computer skills, e.g. opening hidden folders, browsing to system directories)
 
 1. Download AdditionsMC Fabric, ModMenu, the Fabric API and Fabric loader from the releases page or CurseForge (Coming Soon!).
 
@@ -21,6 +21,6 @@ It's server-side compatible this time!
 
 5. You're all set! 
 
-# FAQ
+## FAQ
 
 //todo
