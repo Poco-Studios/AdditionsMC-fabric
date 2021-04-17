@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.pocostudios.additions.Init"
+      "net.pocostudios.additions.additionsMod"
     ]
   },
   "mixins": [
