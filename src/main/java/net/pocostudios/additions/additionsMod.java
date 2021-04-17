@@ -2,6 +2,10 @@ package net.pocostudios.additions;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Material;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -11,6 +15,7 @@ public class additionsMod implements ModInitializer {
 
 	//test item
 	public static final Item TEST_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Block TEST_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
 
 	@Override
 	public void onInitialize() {
@@ -20,6 +25,8 @@ public class additionsMod implements ModInitializer {
 
 		System.out.println("AdditionsMC is initializing. Have fun!");
 
-		Registry.register(Registry.ITEM, new Identifier("additions", "test_item"), TEST_ITEM);
+		Registry.register(Registry.ITEM, new Identifier("additions", "test_item"), TEST_ITEM); //register test item
+		Registry.register(Registry.BLOCK, new Identifier("additions", "test_block"), TEST_BLOCK); //test blok
+		Registry.register(Registry.ITEM, new Identifier("additions", "test_block"), new BlockItem(TEST_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
 	}
 }
