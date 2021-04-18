@@ -17,7 +17,7 @@ public class additionsMod implements ModInitializer {
 	//public static final Item TEST_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 	//public static final Block TEST_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
 
-	public static final Item OBSIDIAN_SWORD = new Item(new FabricItemSettings().group(ItemGroup.TOOLS));
+	public static final Item OBSIDIAN_SWORD = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
 
 	@Override
 	public void onInitialize() {
