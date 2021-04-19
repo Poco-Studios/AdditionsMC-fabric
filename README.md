@@ -8,7 +8,7 @@ The items in AdditionsMC Fabric are going to be very different from those in Add
 
 It's server-side compatible this time!
 
-## How to Use (Requires medium computer skills, e.g. opening hidden folders, browsing to system directories)
+## How to Use (Requires decent computer skills, e.g. opening hidden folders, browsing to system directories)
 
 1. Download AdditionsMC Fabric, ModMenu, the Fabric API and Fabric loader from the releases page or CurseForge (Coming Soon!).
 
@@ -21,5 +21,7 @@ It's server-side compatible this time!
 5. You're all set! 
 
 ## FAQ
+Q. How often is this updated?
 
-//TODO
+A. I try to commit every day but sometimes I forget, but these are mostly small commits like updating the README.
+I add major features mostly on weekends, so I guess you could say every week 🤷‍♂️
