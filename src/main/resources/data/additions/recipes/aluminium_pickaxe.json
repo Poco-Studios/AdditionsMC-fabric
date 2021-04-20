@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "O",
-    "O",
-    "S"
+    "AAA",
+    " S ",
+    " S "
   ],
   "key": {
     "S": {
       "item": "minecraft:stick"
     },
-    "O": {
-      "item": "minecraft:obsidian"
+    "A": {
+      "item": "additions:aluminium_ingot"
     }
   },
   "result": {
-    "item": "additions:obsidian_sword",
+    "item": "additions:aluminium_pickaxe",
     "count": 1
   }
 }
