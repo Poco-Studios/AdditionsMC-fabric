@@ -14,7 +14,7 @@ It's server-side compatible this time!
 
 2. Follow the instructions on the Fabric site (https://fabricmc.net) to install Fabric.
 
-3. Copy AdditionsMC, ModMenu and the Fabric API to the mods folder.
+3. Copy AdditionsMC, ModMenu and the Fabric API to the mods folder (I'm assuming you know how to install mods. If not: https://apexminecrafthosting.com/how-to-install-mods-on-forge#windows)
 
 4. Start minecraft and click on the "Mods" button. If it is not there or AdditionsMC does not show up, check your mods folder. 
 
