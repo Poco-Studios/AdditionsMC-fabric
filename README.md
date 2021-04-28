@@ -30,7 +30,7 @@ I add major features mostly on weekends, so I guess you could say every week ðŸ¤
 
 v0.1.0: Aluminium tool class; other general stuff 
 
-v0.2.0: Advanced Computing module (will take longest)
+v0.2.0: Advanced Engineering module (will take longest)
 
 v0.3.0: ???
 
