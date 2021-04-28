@@ -25,3 +25,13 @@ Q. How often is this updated?
 
 A. I try to commit every day but sometimes I forget, but these are mostly small commits like updating the README.
 I add major features mostly on weekends, so I guess you could say every week 🤷‍♂️
+
+## Upcoming Features
+
+v0.1.0: Aluminium tool class; other general stuff 
+
+v0.2.0: Advanced Weaponry module (will take longest)
+
+v0.3.0: ???
+
+
