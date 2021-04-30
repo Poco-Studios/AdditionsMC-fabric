@@ -4,3 +4,5 @@ Changelog
 
 18-4-2021: Removed test item and block, added the beginnings of an aluminium tool system.
 
+30-4-2021: Removed textures and models of test stuff, removed aluminium tools, added aluminium and silicon ores and tyheir respective derivatives (IN PROGRESS)
+Also reverted buggy "ugh" commit
