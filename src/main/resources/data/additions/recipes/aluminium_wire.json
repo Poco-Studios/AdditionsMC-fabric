@@ -1,20 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "   ",
     "AAA",
-    " S ",
-    " S "
+    "   "
   ],
   "key": {
-    "S": {
-      "item": "minecraft:stick"
-    },
     "A": {
       "item": "additions:aluminium_ingot"
     }
   },
   "result": {
-    "item": "additions:aluminium_pickaxe",
-    "count": 1
+    "item": "additions:aluminium_wire",
+    "count": 16
   }
 }

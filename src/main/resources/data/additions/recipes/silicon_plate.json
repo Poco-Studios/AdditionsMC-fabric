@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "additions:silicon_ingot"
+    }
+  ],
+  "result": {
+    "item": "additions:silicon_plate",
+    "count": 6
+  }
+}

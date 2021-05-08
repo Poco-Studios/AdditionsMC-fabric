@@ -9,16 +9,15 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import javax.tools.Tool;
-
 public class additionsMod implements ModInitializer {
 
 	public static final Item ALUMINIUM_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Block ALUMINIUM_ORE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.5F).resistance(6.0F)); //Al things
+	public static final Item ALUMINIUM_WIRE = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 
-	public static ToolItem ALUMINIUM_SWORD = new SwordItem(AluminiumToolMaterial.INSTANCE, 7, +1.0F, new Item.Settings().group(ItemGroup.COMBAT));
-	public static ToolItem ALUMINIUM_SHOVEL = new ShovelItem(AluminiumToolMaterial.INSTANCE, 1.5F, +1.0F, new Item.Settings().group(ItemGroup.TOOLS));
-	//must figure out the Al axe and hoe (protected)
-
+	public static final Item SILICON_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final Block SILICON_ORE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.5F).resistance(6.0F));
+	public static final Item SILICON_PLATE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //Si things
 
 	@Override
 	public void onInitialize() {
@@ -29,7 +28,14 @@ public class additionsMod implements ModInitializer {
 		System.out.println("AdditionsMC is initializing. Have fun!");
 
 		Registry.register(Registry.ITEM, new Identifier("additions", "aluminium_ingot"), ALUMINIUM_INGOT); //Al ingot
+		Registry.register(Registry.BLOCK, new Identifier("additions", "aluminium_ore"), ALUMINIUM_ORE_BLOCK); //Al ore
+		Registry.register(Registry.ITEM, new Identifier("additions", "aluminium_ore"), new BlockItem(ALUMINIUM_ORE_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("additions", "aluminium_wire"), ALUMINIUM_WIRE); //Al wire
 
+		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_ingot"), SILICON_INGOT); //Si ingot
+		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_plate"), SILICON_PLATE); //Si plate
+		Registry.register(Registry.BLOCK, new Identifier("additions", "silicon_ore"), SILICON_ORE_BLOCK); //si ore
+		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_ore"), new BlockItem(SILICON_ORE_BLOCK, new FabricItemSettings().group(ItemGroup.MISC))); //si ore blockItem
 
 
 	}
