@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AWA",
+    "WSW",
+    "AWA"
+  ],
+  "key": {
+    "A": {
+      "item": "additions:aluminium_ingot"
+    },
+	
+	"W": {
+		"item": "additions:aluminium_wire"
+	},
+	
+	"S": {
+		"item": "additions:silicon_plate"
+	}
+  },
+  "result": {
+    "item": "additions:cpu",
+    "count": 1
+  }
+}
