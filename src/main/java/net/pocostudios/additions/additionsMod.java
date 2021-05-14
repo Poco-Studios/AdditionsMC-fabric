@@ -44,7 +44,7 @@ public class additionsMod implements ModInitializer {
 	private static ConfiguredFeature<?, ?> ALUMINIUM_ORE_GEN = Feature.ORE
 			.configure(new OreFeatureConfig(
 					OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient.
+					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
 					9)) // vein size
 			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
 					0,
