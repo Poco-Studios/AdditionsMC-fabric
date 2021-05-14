@@ -40,13 +40,11 @@ public class additionsMod implements ModInitializer {
 
 
 
-	//Ore gen
-
-	/* //Ugh. This never works. Will remain commented till we fix it.
+	//Ugh. This never works. Will remain commented till we fix it.
 	private static ConfiguredFeature<?, ?> ALUMINIUM_ORE_GEN = Feature.ORE
 			.configure(new OreFeatureConfig(
 					OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-					Blocks.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient.
+					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient.
 					9)) // vein size
 			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
 					0,
@@ -54,13 +52,11 @@ public class additionsMod implements ModInitializer {
 					64)))
 			.spreadHorizontally()
 			.repeat(20); // number of veins per chunk
-	*/
 
 
 
 
-
-	@Override
+	@Override //Ok, this can only go here.
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
@@ -78,18 +74,17 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("additions", "silicon_ore"), SILICON_ORE_BLOCK); //si ore
 		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_ore"), new BlockItem(SILICON_ORE_BLOCK, new FabricItemSettings().group(ItemGroup.MISC))); //si ore blockItem
 
-		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //si ore
+		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //cpu
 
 
 
 
 
-		/* This doesn't work either.
+		//This doesn't work either.
 		RegistryKey<ConfiguredFeature<?, ?>> aluminiumOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
 				new Identifier("additions", "aluminium_ore_gen"));
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, aluminiumOreGen.getValue(), ALUMINIUM_ORE_BLOCK);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, aluminiumOreGen);
-		*/
 
 
 

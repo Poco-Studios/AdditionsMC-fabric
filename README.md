@@ -28,10 +28,10 @@ I add major features mostly on weekends, so I guess you could say every week ðŸ¤
 
 ## Upcoming Features
 
-v0.1.0: Aluminium tool class; other general stuff 
+v0.1.0: Setting up in general 
 
 v0.2.0: Advanced Engineering module (will take longest)
 
-v0.3.0: ???
+v0.3.0: Decorations module
 
-
+v0.3.1 - v?.?.?: Bugfixes; new features
