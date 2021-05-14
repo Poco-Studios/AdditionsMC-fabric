@@ -38,29 +38,33 @@ public class additionsMod implements ModInitializer {
 
 
 
-
-
-	//Ore gen
-
-	/* //Ugh. This never works. Will remain commented till we fix it.
+	//Al ore
 	private static ConfiguredFeature<?, ?> ALUMINIUM_ORE_GEN = Feature.ORE
-			.configure(new OreFeatureConfig(
-					OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-					Blocks.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient.
+			.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
 					9)) // vein size
-			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-					0,
-					0,
-					64)))
+			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
 			.spreadHorizontally()
 			.repeat(20); // number of veins per chunk
-	*/
 
 
 
 
 
-	@Override
+
+	//Si ore
+	private static ConfiguredFeature<?, ?> SILICON_ORE_GEN = Feature.ORE
+	.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+			additionsMod.SILICON_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
+			9)) // vein size
+	.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
+	.spreadHorizontally()
+	.repeat(20); // number of veins per chunk
+
+
+
+
+	@Override //Ok, this can only go here.
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
@@ -78,20 +82,23 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("additions", "silicon_ore"), SILICON_ORE_BLOCK); //si ore
 		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_ore"), new BlockItem(SILICON_ORE_BLOCK, new FabricItemSettings().group(ItemGroup.MISC))); //si ore blockItem
 
-		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //si ore
+		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //cpu
 
 
 
 
 
-		/* This doesn't work either.
-		RegistryKey<ConfiguredFeature<?, ?>> aluminiumOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
-				new Identifier("additions", "aluminium_ore_gen"));
-		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, aluminiumOreGen.getValue(), ALUMINIUM_ORE_BLOCK);
+		RegistryKey<ConfiguredFeature<?, ?>> aluminiumOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("additions", "aluminium_ore_gen"));
+		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, aluminiumOreGen.getValue(), ALUMINIUM_ORE_GEN); //Some issue in "Registry.register..." 
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, aluminiumOreGen);
-		*/
 
 
+
+
+
+		RegistryKey<ConfiguredFeature<?, ?>> siliconOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("additions", "silicon_ore_gen"));
+		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, siliconOreGen.getValue(), SILICON_ORE_GEN); //Some issue in "Registry.register..." 
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, siliconOreGen);
 
 
 
