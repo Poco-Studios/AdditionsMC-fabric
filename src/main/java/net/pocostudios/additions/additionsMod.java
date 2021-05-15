@@ -6,9 +6,10 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
-import net.minecraft.item.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -37,7 +38,6 @@ public class additionsMod implements ModInitializer {
 
 
 
-
 	//Al ore
 	private static ConfiguredFeature<?, ?> ALUMINIUM_ORE_GEN = Feature.ORE
 			.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
@@ -46,9 +46,6 @@ public class additionsMod implements ModInitializer {
 			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
 			.spreadHorizontally()
 			.repeat(20); // number of veins per chunk
-
-
-
 
 
 
@@ -87,15 +84,12 @@ public class additionsMod implements ModInitializer {
 
 
 
-
+		//Al ore gen
 		RegistryKey<ConfiguredFeature<?, ?>> aluminiumOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("additions", "aluminium_ore_gen"));
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, aluminiumOreGen.getValue(), ALUMINIUM_ORE_GEN); //Some issue in "Registry.register..." 
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, aluminiumOreGen);
 
-
-
-
-
+		//Si ore gen
 		RegistryKey<ConfiguredFeature<?, ?>> siliconOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("additions", "silicon_ore_gen"));
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, siliconOreGen.getValue(), SILICON_ORE_GEN); //Some issue in "Registry.register..." 
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, siliconOreGen);

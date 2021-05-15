@@ -1,5 +1,8 @@
 # AdditionsMC Fabric
 
+[![build](https://github.com/Poco-Studios/AdditionsMC-fabric/actions/workflows/build.yml/badge.svg)](https://github.com/Poco-Studios/AdditionsMC-fabric/actions/workflows/build.yml)
+
+
 This is AdditionsMC from https://github.com/Poco-Studios/AdditionsMC, but ported to Fabric for better support and compatibility!
 
 We're sorry to say that AdditionsMC Forge is no longer supported, at least until MCreator 2021 comes out with support for 1.16.5.
