@@ -9,3 +9,5 @@ Changelog
 11-5-2021: Finished silicon ore texture, added CPU.
 
 14-5-2021: Fixed custom ore generation; successfully ran Minecraft on a browser through replit.com.
+
+15-5-2021: Added smelting recipes for aluminium and silicon ores; added (strangely) non-functional loot tables.
