@@ -9,7 +9,7 @@ We're sorry to say that AdditionsMC Forge is no longer supported, at least until
 
 The items in AdditionsMC Fabric are going to be very different from those in AdditionsMC Forge (as that was originally a joke).
 
-It's server-side compatible this time!
+It's server-side compatible!
 
 ## How to Use (Requires decent computer skills, e.g. opening hidden folders, browsing to system directories)
 
@@ -19,7 +19,7 @@ It's server-side compatible this time!
 
 3. Copy AdditionsMC, ModMenu and the Fabric API to the mods folder (I'm assuming you know how to install mods. If not: https://apexminecrafthosting.com/how-to-install-mods-on-forge#windows)
 
-4. Start minecraft and click on the "Mods" button. If it is not there or AdditionsMC does not show up, check your mods folder. 
+4. Start Minecraft and click on the "Mods" button. If it is not there or AdditionsMC does not show up, check your mods folder. 
 
 5. You're all set! 
 
