@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AQA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "additions:aluminium_ingot"
+    },
+
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "additions:power_core",
+    "count": 1
+  }
+}
