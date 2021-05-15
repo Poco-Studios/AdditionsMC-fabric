@@ -31,7 +31,7 @@ I add major features mostly on weekends, so I guess you could say every week ğŸ¤
 
 ## Upcoming Features
 
-v0.1.0: Setting up in general 
+v0.1.0: Setting up in general (Done!)
 
 v0.2.0: Advanced Engineering module (will take longest)
 
