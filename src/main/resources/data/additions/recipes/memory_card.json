@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WQW",
+    "WSW"
+  ],
+  "key": {
+    "W": {
+      "item": "additions:aluminium_wire"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "S": {
+      "item": "additions:silicon_plate"
+    }
+  },
+  "result": {
+    "item": "additions:memory_card",
+    "count": 16
+  }
+}

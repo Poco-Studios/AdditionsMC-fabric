@@ -32,6 +32,7 @@ public class additionsMod implements ModInitializer {
 	public static final Item SILICON_PLATE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //Si things
 
 	public static final Item CPU= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //CPU
+	public static final Item MEMORY_CARD= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //m. card
 	public static final Item POWER_CORE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //p.core
 
 
@@ -80,6 +81,7 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("additions", "silicon_ore"), new BlockItem(SILICON_ORE_BLOCK, new FabricItemSettings().group(ItemGroup.MISC))); //si ore blockItem
 
 		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //cpu
+		Registry.register(Registry.ITEM, new Identifier("additions", "memory_card"), MEMORY_CARD); //cpu
 		Registry.register(Registry.ITEM, new Identifier("additions", "power_core"), POWER_CORE); //power core
 
 
