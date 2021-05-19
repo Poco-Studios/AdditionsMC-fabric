@@ -34,6 +34,9 @@ public class additionsMod implements ModInitializer {
 	public static final Item CPU= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //CPU
 	public static final Item MEMORY_CARD= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //m. card
 	public static final Item POWER_CORE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //p.core
+	public static final Item CHARGED_POWER_CORE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //charged p.core
+
+	public static final Item FUEL_TANK= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //fuel
 
 
 
@@ -83,6 +86,12 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("additions", "cpu"), CPU); //cpu
 		Registry.register(Registry.ITEM, new Identifier("additions", "memory_card"), MEMORY_CARD); //cpu
 		Registry.register(Registry.ITEM, new Identifier("additions", "power_core"), POWER_CORE); //power core
+		Registry.register(Registry.ITEM, new Identifier("additions", "charged_power_core"), CHARGED_POWER_CORE); //power core
+
+		Registry.register(Registry.ITEM, new Identifier("additions", "fuel_tank"), FUEL_TANK);
+
+
+
 
 
 

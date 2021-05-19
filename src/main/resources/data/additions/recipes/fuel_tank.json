@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "additions:aluminium_ingot"
+    },
+
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "additions:fuel_tank",
+    "count": 4
+  }
+}
