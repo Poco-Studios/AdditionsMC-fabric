@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "additions:aluminium_ore"
+          "name": "additions:aluminium_block"
         }
       ],
       "conditions": [
