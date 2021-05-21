@@ -38,6 +38,7 @@ public class additionsMod implements ModInitializer {
 
 	public static final Item FUEL_TANK= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //fuel
 
+	public static final Item PLASMA_GENERATOR= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //plasma gen
 
 
 
@@ -57,10 +58,10 @@ public class additionsMod implements ModInitializer {
 	private static ConfiguredFeature<?, ?> SILICON_ORE_GEN = Feature.ORE
 	.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
 			additionsMod.SILICON_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
-			9)) // vein size
+			4)) // vein size
 	.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
 	.spreadHorizontally()
-	.repeat(20); // number of veins per chunk
+	.repeat(10); // number of veins per chunk
 
 
 
@@ -89,6 +90,8 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("additions", "charged_power_core"), CHARGED_POWER_CORE); //power core
 
 		Registry.register(Registry.ITEM, new Identifier("additions", "fuel_tank"), FUEL_TANK);
+
+		Registry.register(Registry.ITEM, new Identifier("additions", "plasma_generator"), PLASMA_GENERATOR);
 
 
 

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WW ",
+    "SQ ",
+    "WW "
+  ],
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+
+    "W": {
+      "item": "additions:aluminium_wire"
+    },
+
+    "S": {
+      "item": "additions:silicon_plate"
+    }
+  },
+  "result": {
+    "item": "additions:plasma_generator",
+    "count": 1
+  }
+}
