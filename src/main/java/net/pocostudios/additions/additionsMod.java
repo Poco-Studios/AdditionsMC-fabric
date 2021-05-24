@@ -7,9 +7,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -39,6 +37,18 @@ public class additionsMod implements ModInitializer {
 	public static final Item FUEL_TANK= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //fuel
 
 	public static final Item PLASMA_GENERATOR= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //plasma gen
+
+
+	//Plasma cannon
+	public static RangedWeaponItem PLASMA_CANNON = new CrossbowItem(new Item.Settings().group(ItemGroup.COMBAT));
+
+
+
+
+
+
+
+
 
 
 
@@ -72,7 +82,7 @@ public class additionsMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		System.out.println("AdditionsMC is initializing. Have fun!");
+		System.out.println("AdditionsMC 0.2.0-alpha3 is initializing. Have fun!");
 
 		Registry.register(Registry.ITEM, new Identifier("additions", "aluminium_ingot"), ALUMINIUM_INGOT); //Al ingot
 		Registry.register(Registry.BLOCK, new Identifier("additions", "aluminium_ore"), ALUMINIUM_ORE_BLOCK); //Al ore
@@ -92,6 +102,10 @@ public class additionsMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("additions", "fuel_tank"), FUEL_TANK);
 
 		Registry.register(Registry.ITEM, new Identifier("additions", "plasma_generator"), PLASMA_GENERATOR);
+
+
+		Registry.register(Registry.ITEM, new Identifier("additions", "plasma_cannon"), PLASMA_CANNON);
+
 
 
 
