@@ -40,12 +40,7 @@ public class additionsMod implements ModInitializer {
 
 
 	//Plasma cannon
-	public static RangedWeaponItem PLASMA_CANNON = new CrossbowItem(new Item.Settings().group(ItemGroup.COMBAT));
-
-
-
-
-
+	public static RangedWeaponItem PLASMA_CANNON = new BowItem(new Item.Settings().group(ItemGroup.COMBAT));
 
 
 
@@ -56,7 +51,7 @@ public class additionsMod implements ModInitializer {
 	//Al ore
 	private static ConfiguredFeature<?, ?> ALUMINIUM_ORE_GEN = Feature.ORE
 			.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
+					additionsMod.ALUMINIUM_ORE_BLOCK.getDefaultState(),
 					9)) // vein size
 			.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
 			.spreadHorizontally()
@@ -67,7 +62,7 @@ public class additionsMod implements ModInitializer {
 	//Si ore
 	private static ConfiguredFeature<?, ?> SILICON_ORE_GEN = Feature.ORE
 	.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
-			additionsMod.SILICON_ORE_BLOCK.getDefaultState(), //Issue with "ALUMINIUM_ORE_BLOCK"; same as when we tried to make the tool repair ingredient. Update: Think I fixed it.
+			additionsMod.SILICON_ORE_BLOCK.getDefaultState(),
 			4)) // vein size
 	.decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 64)))
 	.spreadHorizontally()
@@ -119,7 +114,7 @@ public class additionsMod implements ModInitializer {
 
 		//Si ore gen
 		RegistryKey<ConfiguredFeature<?, ?>> siliconOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("additions", "silicon_ore_gen"));
-		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, siliconOreGen.getValue(), SILICON_ORE_GEN); //Some issue in "Registry.register..." 
+		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, siliconOreGen.getValue(), SILICON_ORE_GEN);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, siliconOreGen);
 
 

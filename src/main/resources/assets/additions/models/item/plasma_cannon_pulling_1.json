@@ -1,0 +1,6 @@
+{
+    "parent": "additions:item/plasma_cannon",
+    "textures": {
+        "layer0": "additions:item/plasma_cannon_pulling_1"
+    }
+}

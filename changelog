@@ -15,3 +15,5 @@ Changelog
 20-5-2021: Downgraded Fabric API version to 0.32.5 for functionality with Origins; added missing power core models.
 
 21-5-2021: Added power core.
+
+25-5-2021: Added custom BowItem plasma cannon, currently uses arrows.
