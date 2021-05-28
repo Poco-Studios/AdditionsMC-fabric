@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CPG",
+    "A  "
+  ],
+  "key": {
+    "C": {
+      "item": "additions:cpu"
+    },
+
+    "P": {
+      "item": "additions:charged_power_core"
+    },
+
+    "G": {
+      "item": "additions:plasma_generator"
+    },
+    "A": {
+      "item": "additions:aluminium_ingot"
+    }
+  },
+  "result": {
+    "item": "additions:plasma_cannon",
+    "count": 1
+  }
+}
