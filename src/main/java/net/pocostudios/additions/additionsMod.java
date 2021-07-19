@@ -27,16 +27,16 @@ public class additionsMod implements ModInitializer {
 
 	public static final Item SILICON_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Block SILICON_ORE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.5F).resistance(6.0F));
-	public static final Item SILICON_PLATE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //Si things
+	public static final Item SILICON_PLATE = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //Si things
 
-	public static final Item CPU= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //CPU
-	public static final Item MEMORY_CARD= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //m. card
-	public static final Item POWER_CORE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //p.core
-	public static final Item CHARGED_POWER_CORE= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //charged p.core
+	public static final Item CPU = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //CPU
+	public static final Item MEMORY_CARD = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //m. card
+	public static final Item POWER_CORE = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //p.core
+	public static final Item CHARGED_POWER_CORE = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //charged p.core
 
-	public static final Item FUEL_TANK= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //fuel
+	public static final Item FUEL_TANK = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //fuel
 
-	public static final Item PLASMA_GENERATOR= new Item(new FabricItemSettings().group(ItemGroup.MISC)); //plasma gen
+	public static final Item PLASMA_GENERATOR = new Item(new FabricItemSettings().group(ItemGroup.MISC)); //plasma gen
 
 
 	//Plasma cannon
