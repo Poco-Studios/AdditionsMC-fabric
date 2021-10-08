@@ -5,11 +5,11 @@
 
 This is AdditionsMC from https://github.com/Poco-Studios/AdditionsMC, but ported to Fabric for better support and compatibility!
 
-We're sorry to say that AdditionsMC Forge is no longer supported, at least until MCreator 2021 comes out with support for 1.16.5.
+We're sorry to say that AdditionsMC Forge is no longer supported, ~at least until MCreator 2021 comes out with support for 1.16.5~.
 
 The items in AdditionsMC Fabric are going to be very different from those in AdditionsMC Forge (as that was originally a joke).
 
-It's server-side compatible!
+~It's server-side compatible!~ not really i have no idea what im doing
 
 ## How to Use (Requires decent computer skills, e.g. opening hidden folders, browsing to system directories)
 
